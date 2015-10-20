@@ -1,0 +1,11 @@
+WEB
+1
+http://www.monosaccharidedb.org/display_monosaccharide.action?id=["ID", "Enter Monosac ID here"]
+
+Selection=2
+Formatting=None
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False
+DisableDateRecognition=False
+DisableRedirections=False
