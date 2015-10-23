@@ -22,8 +22,8 @@ def compareXY(XY1, XY2):
     '''
 
     # These define what is close enough to count
-    X_ADJUST = .25
-    Y_ADJUST = .2
+    X_ADJUST = .20
+    Y_ADJUST = .15
 
     okay = False
 
@@ -50,7 +50,6 @@ if( not os.access(filename_csv,os.R_OK) ):
 Files to test in a list
 '''
 mappingFiles = [
-"AllLipids.csv",
 "CoreAminoAcids.csv",
 "FattyAcyls.csv",
 "Flavonoids.csv",
@@ -62,7 +61,8 @@ mappingFiles = [
 "Saccharolipids.csv",
 "Sphingolipids.csv",
 "SterolLipids.csv",
-"Terpenoids.csv"
+"Terpenoids.csv",
+"AllLipids.csv"
 ]
 
 
@@ -96,12 +96,9 @@ for files in mappingFiles:
                 counter += 1
         if counter > (len(tList) * PERCENT_NEAR):
             filteredtups.append(pair)
-        print(pair)
-    print len(tList)
-    print len(filteredtups)
 
     hm = heatmap.Heatmap()
-    img = hm.heatmap(filteredtups, dotsize = 150, opacity = 250, scheme='classic', area=((0,0),(1.4,2.5)))
+    img = hm.heatmap(filteredtups, dotsize = 100, opacity = 250, scheme='classic', area=((0,0),(1.4,2.5)))
 
 
     # Graphs the data provided and labels axesarea = 10.0
