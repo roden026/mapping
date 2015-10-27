@@ -13,7 +13,7 @@ import six
 import dateutil
 import itertools
 
-usage_mesg = 'driver2.py <csv file(s)>'
+usage_mesg = 'VanKrevelen.py <csv file(s)>'
 
 # Checks if files are available.
 filename_csv = sys.argv[1]
